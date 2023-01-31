@@ -1,10 +1,12 @@
 ---
+import { SpotifyStatus } from '../components/spotify-status';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout >
 	<main class="h-full w-full bg-black">
 
+			<SpotifyStatus client:load/>
 	</main>
 </Layout>
 
