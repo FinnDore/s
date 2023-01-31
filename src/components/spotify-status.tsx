@@ -11,7 +11,7 @@ export const UnwrappedSpotifyStatus = () => {
     const { data } = useQuery({
         queryKey: ['spot'],
         queryFn: async () => ({
-            currentSong: await fetch('http://localhost:3001').then(
+            currentSong: await fetch('http://spot.finndore.dev').then(
                 res => res.json() as unknown as CurrentSong
             ),
             timestamp: new Date().getTime(),
